@@ -1,14 +1,6 @@
 <?php
-// 1.
-// First of all you need a token with specified permissions:
-// https://dash.cloudflare.com/profile/api-tokens
-// 2.
-// After that you need to create A and AAAA records (e.g. dyndns.example.com)
-// and you have to copy the zone id (shown in the domain overview)
-// 3.
 // Paste a url like this in your router settings (tested with AVM FRITZ!Box):
 // https://example.com/updater.php?user=<username>&password=<pass>&host=<domain>&ip=<ipaddr>&ip6=<ip6addr>
-//
 
 // Turn off all error reporting
 error_reporting(0);
