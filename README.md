@@ -21,7 +21,7 @@ For security reasons it's recommended limit the access to your webserver's ip in
 Stay logged in on Cloudflare! After that you need to create A and AAAA records (e.g. dyndns.example.com) and you have to copy the Zone ID. The Zone ID is shown on the domain overview. You can adapt the Zone ID into the $config array.
 
 ### Step 3: Set up your router
-Finalize the updater by inserting the credentials on your router settings. You need to paste a url like this:
-https://example.com/updater.php?user=<username>&password=<pass>&host=<domain>&ip=<ipaddr>&ip6=<ip6addr>
+Finalize the updater by inserting the credentials on your router settings. User and password are stored unencrypted and without any hash in the $config array because the routers pass them on as a get variable anyway... The URL should look like this:
 
-User and password are stored unencrypted and without any hash in the $config array because the routers pass them on as a get variable anyway... So, you will need to set up them to.
+        https://example.com/updater.php?user=<username>&password=<pass>&host=<domain>&ip=<ipaddr>&ip6=<ip6addr>
+
