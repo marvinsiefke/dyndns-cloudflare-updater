@@ -1,5 +1,5 @@
 # dyndns-cloudflare-updater
-A lightweight PHP script, that updates your dns records at Cloudflare when pinged by your router.
+A lightweight PHP script that updates your dns records at Cloudflare when pinged by your router.
 
 You will need:
 - A Cloudflare account (it doesn't matter whether it's free or a paid plan)
